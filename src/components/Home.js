@@ -14,9 +14,9 @@ class Home extends React.Component {
             sortBy='most-recent'
             target={Home}
             template=''
-            userId='6915448139'
-            clientId='4cb9776cd8324d33bd5d00d3795b7622'
-            accessToken='6915448139.1677ed0.b65395235dc14376b8319a78cf48df43'
+            userId={`${process.env.REACT_APP_INSTAGRAM_USER_ID}`}
+            clientId={`${process.env.REACT_APP_INSTAGRAM_CLIENT_ID}`}
+            accessToken={`${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`}
             />
         </div>
       )
