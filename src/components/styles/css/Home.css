@@ -1,7 +1,7 @@
-.Home div:first-of-type {
+.Feed div:first-of-type {
   display: none; }
 
-.Home img {
+.Feed img {
   object-fit: cover;
   width: 100%;
   display: block;
@@ -9,22 +9,22 @@
   height: 230px;
   transition: 500ms; }
 
-.Home a {
+.Feed a {
   align-self: stretch;
   position: relative; }
 
 @media all and (min-width: 1024px) {
-  .Home {
+  .Feed {
     display: grid;
     grid-gap: 80px;
     justify-content: space-evenly;
     grid-template: "image-1 image-1 image-2" "image-1 image-1 image-3" "image-4 image-6 image-6" "image-5 image-6 image-6" "image-7 image-8 image-9" "image-10 image-10 image-10"; }
-    .Home a:hover h3 {
+    .Feed a:hover h3 {
       display: block; }
-    .Home a:hover img {
+    .Feed a:hover img {
       filter: contrast(1.1) saturate(1.1);
       padding: 0; }
-    .Home h3 {
+    .Feed h3 {
       display: none;
       position: absolute;
       bottom: 1rem;
@@ -33,40 +33,47 @@
       background: rgba(255, 255, 255, 0.8);
       transition: 500ms;
       text-align: center; }
-    .Home a:nth-of-type(2) {
+    .Feed a:nth-of-type(2) {
       grid-area: image-1; }
-      .Home a:nth-of-type(2) img {
+      .Feed a:nth-of-type(2) img {
         height: 540px; }
-    .Home a:nth-of-type(3) {
+    .Feed a:nth-of-type(3) {
       grid-area: image-2; }
-    .Home a:nth-of-type(4) {
+    .Feed a:nth-of-type(4) {
       grid-area: image-3; }
-    .Home a:nth-of-type(5) {
+    .Feed a:nth-of-type(5) {
       grid-area: image-4; }
-    .Home a:nth-of-type(6) {
+    .Feed a:nth-of-type(6) {
       grid-area: image-5; }
-    .Home a:nth-of-type(7) {
+    .Feed a:nth-of-type(7) {
       grid-area: image-6; }
-      .Home a:nth-of-type(7) img {
+      .Feed a:nth-of-type(7) img {
         height: 540px; }
-    .Home a:nth-of-type(8) {
+    .Feed a:nth-of-type(8) {
       grid-area: image-7; }
-    .Home a:nth-of-type(9) {
+    .Feed a:nth-of-type(9) {
       grid-area: image-8; }
-    .Home a:nth-of-type(10) {
+    .Feed a:nth-of-type(10) {
       grid-area: image-9; }
-    .Home a:nth-of-type(10) {
+    .Feed a:nth-of-type(10) {
       grid-area: image-10; }
-      .Home a:nth-of-type(10) img {
+      .Feed a:nth-of-type(10) img {
         height: 540px; } }
 
 @media all and (max-width: 1023px) {
-  .Home {
+  .Feed {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 40px; } }
 
 @media all and (max-width: 767px) {
-  .Home {
+  .Feed {
     display: block; } }
+
+.Intro {
+  text-align: center;
+  margin: 80px auto;
+  padding: 25px;
+  letter-spacing: 10px;
+  font-size: 72px; }

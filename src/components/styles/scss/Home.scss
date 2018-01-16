@@ -1,6 +1,6 @@
 // Desktop
 
-.Home {
+.Feed {
   div:first-of-type {
     display: none;
   }
@@ -20,7 +20,7 @@
 }
 
 @media all and (min-width: 1024px) {
-  .Home {
+  .Feed {
     display: grid;
     grid-gap: 80px;
     justify-content: space-evenly;
@@ -98,7 +98,7 @@
 // Tablet
 
 @media all and (max-width: 1023px) {
-  .Home {
+  .Feed {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -109,7 +109,15 @@
 // Mobile
 
 @media all and (max-width: 767px) {
-  .Home {
+  .Feed {
     display: block;
   }
+}
+
+.Intro {
+  text-align: center;
+  margin: 80px auto;
+  padding: 25px;
+  letter-spacing: 10px;
+  font-size: 72px;
 }

@@ -1,0 +1,34 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .Nav {
+        display: flex;
+        flex-direction: row;
+        .Nav-item {
+            margin-left: 2rem;
+            list-style-type: none;
+
+            a {
+                text-decoration: none !important;
+                color: black;
+            }
+        }
+    }
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media all and (max-width: 767px) {
+    .Header{
+        flex-direction: column;
+        .Nav {
+            .Nav-item {
+                margin-left: 0 auto;
+                justify-content: space-between;
+            }
+        }
+    }
+}
