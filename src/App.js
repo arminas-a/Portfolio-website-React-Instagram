@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
 //App components
@@ -14,10 +14,12 @@ const App = () => (
   <BrowserRouter>
     <div className="App">
       <Header />
-      <Route exact path="/Home" component={Home} />
-      <Route path="/Services" component={Services} />
-      <Route path="/About" component={About} />
-      <Route path="/Contact" component={Contact} />
+      <Switch>
+      <Route exact path="/home" component={Home} />
+      <Route path="/services" component={Services} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
+      </Switch>
       <Footer />
     </div>
   </BrowserRouter>
