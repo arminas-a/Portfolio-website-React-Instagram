@@ -8,12 +8,12 @@ class Home extends React.Component {
       return (
         <div id={Home} className='Home'>
           <Instafeed
-            limit='9'
+            limit='10'
             ref='instafeed'
             resolution='standard_resolution'
             sortBy='most-recent'
             target={Home}
-            template='<a href="{{link}}"><img src="{{image}}" /></a>'
+            template='<a href="{{link}}"><img src="{{image}}" /><h3>{{caption}}</h3></a>'
             userId={`${process.env.REACT_APP_INSTAGRAM_USER_ID}`}
             clientId={`${process.env.REACT_APP_INSTAGRAM_CLIENT_ID}`}
             accessToken={`${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`}
