@@ -13,7 +13,7 @@ class Feed extends React.Component {
             resolution='standard_resolution'
             sortBy='most-recent'
             target={Feed}
-            template='<a href="{{link}}"><img src="{{image}}" /><h3>{{caption}}</h3></a>'
+            template='<a href="{{link}}"><img src="{{image}}" /></a>'
             userId={`${process.env.REACT_APP_INSTAGRAM_USER_ID}`}
             clientId={`${process.env.REACT_APP_INSTAGRAM_CLIENT_ID}`}
             accessToken={`${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`}

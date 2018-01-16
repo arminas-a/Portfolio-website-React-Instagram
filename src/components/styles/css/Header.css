@@ -6,9 +6,14 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem; }
+  .Header h2 {
+    padding: 1rem 0rem; }
   .Header .Nav {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0rem; }
     .Header .Nav .Nav-item {
       margin-left: 2rem;
       list-style-type: none; }
@@ -19,6 +24,27 @@
 @media all and (max-width: 767px) {
   .Header {
     flex-direction: column; }
-    .Header .Nav .Nav-item {
-      margin-left: 0 auto;
-      justify-content: space-between; } }
+    .Header .Nav {
+      justify-content: space-between; }
+      .Header .Nav .Nav-item {
+        margin: 0; } }
+
+.Nav-item a {
+  position: relative; }
+
+.Nav-item a:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  content: '';
+  transform: translateY(2rem);
+  opacity: 0;
+  transition-property: -webkit-transform, opacity;
+  transition-duration: .3s; }
+
+.Nav-item a:hover:before {
+  transform: translateY(0);
+  opacity: 1; }

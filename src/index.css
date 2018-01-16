@@ -14,6 +14,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+p {
+  padding: 1rem 0;
+  line-height: 2;
 }
 
 /* Desktop */

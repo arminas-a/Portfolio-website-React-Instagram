@@ -14,10 +14,10 @@ const App = () => (
   <BrowserRouter>
     <div className="App">
       <Header />
-      <Route exact path="/" component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
+      <Route exact path="/Home" component={Home} />
+      <Route path="/Services" component={Services} />
+      <Route path="/About" component={About} />
+      <Route path="/Contact" component={Contact} />
       <Footer />
     </div>
   </BrowserRouter>

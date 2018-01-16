@@ -37,7 +37,7 @@
         display: block;
       }
       img {
-        filter: contrast(1.1) saturate(1.1);
+        filter: contrast(0.8) saturate(1.1);
         padding: 0;
       }
     }
@@ -116,8 +116,14 @@
 
 .Intro {
   text-align: center;
-  margin: 80px auto;
-  padding: 25px;
+  margin:  4rem auto;
+  padding: 2rem;
   letter-spacing: 10px;
-  font-size: 72px;
+  font-size: 4rem;
+
+  @media all and (max-width: 767px) {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0rem;
+  }
 }
