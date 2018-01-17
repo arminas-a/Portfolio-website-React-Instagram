@@ -1,6 +1,27 @@
 .Footer {
-    border-top: 1px solid gray;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-top: 3rem;
+    background: #212121;
+    h3 {
+        color: #fefefe;
+    }
+    .Footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .Social-media-list {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            margin: 0;
+    
+            .Social-media-network {
+                text-decoration: none;
+            }
+        }
+        
+    }
+
 }

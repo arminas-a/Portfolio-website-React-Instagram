@@ -1,17 +1,35 @@
-.Feed div:first-of-type {
-  display: none; }
-
-.Feed img {
-  object-fit: cover;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  height: 230px;
-  transition: 500ms; }
-
-.Feed a {
-  align-self: stretch;
+.Feed .image-container {
   position: relative; }
+
+.Feed .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 230px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  object-fit: cover; }
+
+.Feed .image-fade {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.Feed .image-container:hover .image {
+  opacity: 0.3; }
+
+.Feed .image-container:hover .image-fade {
+  opacity: 1; }
+
+.Feed .image-caption {
+  background-color: #212121;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 2rem; }
 
 @media all and (min-width: 1024px) {
   .Feed {
@@ -19,23 +37,9 @@
     grid-gap: 80px;
     justify-content: space-evenly;
     grid-template: "image-1 image-1 image-2" "image-1 image-1 image-3" "image-4 image-6 image-6" "image-5 image-6 image-6" "image-7 image-8 image-9" "image-10 image-10 image-10"; }
-    .Feed a:hover h3 {
-      display: block; }
-    .Feed a:hover img {
-      filter: contrast(0.8) saturate(1.1);
-      padding: 0; }
-    .Feed h3 {
-      display: none;
-      position: absolute;
-      bottom: 1rem;
-      width: 100%;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.8);
-      transition: 500ms;
-      text-align: center; }
     .Feed a:nth-of-type(2) {
       grid-area: image-1; }
-      .Feed a:nth-of-type(2) img {
+      .Feed a:nth-of-type(2) .image {
         height: 540px; }
     .Feed a:nth-of-type(3) {
       grid-area: image-2; }
@@ -47,7 +51,7 @@
       grid-area: image-5; }
     .Feed a:nth-of-type(7) {
       grid-area: image-6; }
-      .Feed a:nth-of-type(7) img {
+      .Feed a:nth-of-type(7) .image {
         height: 540px; }
     .Feed a:nth-of-type(8) {
       grid-area: image-7; }
@@ -57,7 +61,7 @@
       grid-area: image-9; }
     .Feed a:nth-of-type(10) {
       grid-area: image-10; }
-      .Feed a:nth-of-type(10) img {
+      .Feed a:nth-of-type(10) .image {
         height: 540px; } }
 
 @media all and (max-width: 1023px) {
@@ -82,3 +86,10 @@
       font-size: 2rem;
       text-align: left;
       padding: 0rem; } }
+
+.example-appear {
+  opacity: 0.01; }
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in; }

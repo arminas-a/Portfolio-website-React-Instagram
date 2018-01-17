@@ -1,0 +1,65 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  h1, h2 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 72px;
+    letter-spacing: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  @media all and (max-width: 767px) {
+    h1, h2 {
+      font-size: 72px;
+    }
+  }
+  
+  
+  
+  p {
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  
+  /* Desktop */
+  
+
+
+  @media all and (min-width: 1024px) {
+    .Header, .Home, .Services, .About, .Contact, .Footer-content {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+  }
+  
+  /* Tablet */
+  
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .Header, .Home, .Services, .About, .Contact, .Footer-content {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+  
+  /* Mobile */
+  
+  @media all and (max-width: 767px) {
+    .Header, .Home, .Services, .About, .Contact, .Footer-content {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+

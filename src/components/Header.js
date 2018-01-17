@@ -4,19 +4,19 @@ import "./styles/css/Header.css";
 
 const Header = () => (
   <div className="Header">
-    <h2>Header</h2>
+    <h3>Header</h3>
     <ul className="Nav">
       <li className="Nav-item">
-        <NavLink exact to="/Home">Home</NavLink>
+        <NavLink exact to="/" activeClassName="active">Home</NavLink>
       </li>
       <li className="Nav-item">
-        <NavLink to="/Services">Services</NavLink>
+        <NavLink to="/Services" activeClassName="active">Services</NavLink>
       </li>
       <li className="Nav-item">
-        <NavLink to="/About">About</NavLink>
+        <NavLink to="/About" activeClassName="active">About</NavLink>
       </li>
       <li className="Nav-item">
-        <NavLink to="/Contact">Contact</NavLink>
+        <NavLink to="/Contact" activeClassName="active">Contact</NavLink>
       </li>
     </ul>
   </div>

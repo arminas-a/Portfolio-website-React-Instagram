@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { CSSTransitionGroup } from 'react-transition-group';
+import './App.css';
 
 
 //App components
@@ -15,7 +17,7 @@ const App = () => (
     <div className="App">
       <Header />
       <Switch>
-      <Route exact path="/home" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/services" component={Services} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
@@ -24,5 +26,6 @@ const App = () => (
     </div>
   </BrowserRouter>
 );
+
 
 export default App;
