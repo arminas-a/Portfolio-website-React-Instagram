@@ -13,7 +13,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Header />
       <Switch>
