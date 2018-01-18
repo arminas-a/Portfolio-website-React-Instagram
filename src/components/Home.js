@@ -18,7 +18,6 @@ import "./styles/css/Home.css";
         >
         <h1 className="Intro">Introduction</h1>
           <div id={Home} className="Home">
-
             <Instafeed
               limit="10"
               ref="instafeed"
