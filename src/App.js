@@ -13,14 +13,14 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Header />
       <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
+      <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+      <Route path={process.env.PUBLIC_URL + '/services'} component={Services} />
+      <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
+      <Route path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
       </Switch>
       <Footer />
     </div>
