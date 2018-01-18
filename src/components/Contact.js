@@ -1,5 +1,6 @@
 import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
+import "./styles/css/Global.css";
 import "./styles/css/Contact.css";
 
 const Contact = () => (

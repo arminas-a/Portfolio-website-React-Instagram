@@ -1,3 +1,15 @@
+@import "Global";
+
 .About {
+  section {
     max-width: 50%;
+    h2 {
+      color: $font-color-dark;
+    }
+  }
+  @media all and (max-width: 767px) {
+      section {
+          max-width: 100%;
+      }
+  }
 }

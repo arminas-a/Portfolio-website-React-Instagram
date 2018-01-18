@@ -1,27 +1,71 @@
+@import 'Global';
+
 .Footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 3rem;
-    background: #212121;
+    background: $background-dark;
     h3 {
         color: #fefefe;
+        padding-bottom: 1rem;
     }
     .Footer-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
+        .Footer-info-container {
+            .Footer-info {
+                    color: $font-color-light;
+                    p {
+                        padding-bottom: 0rem;
+                    }
+            }
+        }
+
         .Social-media-list {
-            display: flex;
-            flex-direction: row;
+            display: block;
             list-style-type: none;
             margin: 0;
+            padding: 0;
+            margin-top: 2rem;
     
             .Social-media-network {
                 text-decoration: none;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    color: $font-color-light;
+                    span {
+                        line-height: 1;
+                        filter: grayscale(100%);
+                        padding-right: 0.5rem;
+                    }
+                    p {
+                        font-size: 0.75rem;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 1.5;
+                        color: $font-color-light;
+                        filter: brightness(50%);
+                    }
+                }
+                a:hover {
+                    span {
+                        filter: grayscale(0);
+                    }
+                    p {
+                        filter: brightness(100%);
+                    }
+                }
             }
         }
-        
     }
+}
 
+.Footer-content {
+    
 }

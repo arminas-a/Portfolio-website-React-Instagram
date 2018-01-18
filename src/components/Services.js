@@ -1,5 +1,6 @@
 import React from "react";
 import { CSSTransitionGroup } from 'react-transition-group';
+import "./styles/css/Global.css";
 import "./styles/css/Services.css";
 
 const Services = () => (
@@ -9,7 +10,10 @@ const Services = () => (
   transitionAppear={true}
   transitionAppearTimeout={500}
   transitionEnter={false}
-  transitionLeave={false}>
+  transitionLeave={false}
+  component="section"
+  >
+  
   <h2>Services</h2>
   <br />
   <article>

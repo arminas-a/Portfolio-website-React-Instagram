@@ -1,2 +1,8 @@
-.About {
+.About section {
   max-width: 50%; }
+  .About section h2 {
+    color: #212121; }
+
+@media all and (max-width: 767px) {
+  .About section {
+    max-width: 100%; } }

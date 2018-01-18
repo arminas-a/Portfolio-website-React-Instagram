@@ -1,3 +1,8 @@
+@import 'Global';
+
 .Contact {
     max-width: 50%;
+    h2 {
+        $font-color-dark: #212121;
+    }
 }

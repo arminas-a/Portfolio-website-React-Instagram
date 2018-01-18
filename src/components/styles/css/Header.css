@@ -6,8 +6,8 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem; }
-  .Header h2 {
-    padding: 1rem 0rem; }
+  .Header h3 {
+    color: #212121; }
   .Header .Nav {
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@
       list-style-type: none; }
       .Header .Nav .Nav-item a {
         text-decoration: none !important;
-        color: black; }
+        color: #212121; }
 
 @media all and (max-width: 767px) {
   .Header {

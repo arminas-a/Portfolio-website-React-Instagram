@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { CSSTransitionGroup } from 'react-transition-group';
+import "./components/styles/css/Global.css";
 import './App.css';
 
 

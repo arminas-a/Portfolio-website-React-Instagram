@@ -1,7 +1,10 @@
-.Feed .image-container {
+.Home .image-container {
   position: relative; }
 
-.Feed .image {
+.Home div:first-of-type {
+  display: none; }
+
+.Home .image {
   opacity: 1;
   display: block;
   width: 100%;
@@ -10,7 +13,7 @@
   backface-visibility: hidden;
   object-fit: cover; }
 
-.Feed .image-fade {
+.Home .image-fade {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -19,60 +22,60 @@
   transform: translate(-50%, -50%);
   text-align: center; }
 
-.Feed .image-container:hover .image {
+.Home .image-container:hover .image {
   opacity: 0.3; }
 
-.Feed .image-container:hover .image-fade {
+.Home .image-container:hover .image-fade {
   opacity: 1; }
 
-.Feed .image-caption {
+.Home .image-caption {
   background-color: #212121;
-  color: white;
+  color: #fefefe;
   font-size: 1rem;
   padding: 1rem 2rem; }
 
 @media all and (min-width: 1024px) {
-  .Feed {
+  .Home {
     display: grid;
     grid-gap: 80px;
     justify-content: space-evenly;
     grid-template: "image-1 image-1 image-2" "image-1 image-1 image-3" "image-4 image-6 image-6" "image-5 image-6 image-6" "image-7 image-8 image-9" "image-10 image-10 image-10"; }
-    .Feed a:nth-of-type(2) {
+    .Home a:nth-of-type(2) {
       grid-area: image-1; }
-      .Feed a:nth-of-type(2) .image {
+      .Home a:nth-of-type(2) .image {
         height: 540px; }
-    .Feed a:nth-of-type(3) {
+    .Home a:nth-of-type(3) {
       grid-area: image-2; }
-    .Feed a:nth-of-type(4) {
+    .Home a:nth-of-type(4) {
       grid-area: image-3; }
-    .Feed a:nth-of-type(5) {
+    .Home a:nth-of-type(5) {
       grid-area: image-4; }
-    .Feed a:nth-of-type(6) {
+    .Home a:nth-of-type(6) {
       grid-area: image-5; }
-    .Feed a:nth-of-type(7) {
+    .Home a:nth-of-type(7) {
       grid-area: image-6; }
-      .Feed a:nth-of-type(7) .image {
+      .Home a:nth-of-type(7) .image {
         height: 540px; }
-    .Feed a:nth-of-type(8) {
+    .Home a:nth-of-type(8) {
       grid-area: image-7; }
-    .Feed a:nth-of-type(9) {
+    .Home a:nth-of-type(9) {
       grid-area: image-8; }
-    .Feed a:nth-of-type(10) {
+    .Home a:nth-of-type(10) {
       grid-area: image-9; }
-    .Feed a:nth-of-type(10) {
+    .Home a:nth-of-type(10) {
       grid-area: image-10; }
-      .Feed a:nth-of-type(10) .image {
+      .Home a:nth-of-type(10) .image {
         height: 540px; } }
 
 @media all and (max-width: 1023px) {
-  .Feed {
+  .Home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 40px; } }
 
 @media all and (max-width: 767px) {
-  .Feed {
+  .Home {
     display: block; } }
 
 .Intro {

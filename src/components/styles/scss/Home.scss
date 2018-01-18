@@ -1,9 +1,15 @@
+@import 'Global';
+
 // Desktop
 
-.Feed {
+.Home {
 
   .image-container {
     position: relative;
+  }
+
+  div:first-of-type {
+    display: none;
   }
   
   .image {
@@ -35,15 +41,15 @@
   }
   
   .image-caption {
-    background-color: #212121;
-    color: white;
+    background-color: $font-color-dark;
+    color: $font-color-light;
     font-size: 1rem;
     padding: 1rem 2rem;
   }
 }
 
 @media all and (min-width: 1024px) {
-  .Feed {
+  .Home {
     display: grid;
     grid-gap: 80px;
     justify-content: space-evenly;
@@ -54,7 +60,6 @@
       "image-5 image-6 image-6"
       "image-7 image-8 image-9"
       "image-10 image-10 image-10";
-
 
     a:nth-of-type(2) {
       grid-area: image-1;
@@ -101,7 +106,7 @@
 // Tablet
 
 @media all and (max-width: 1023px) {
-  .Feed {
+  .Home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -112,7 +117,7 @@
 // Mobile
 
 @media all and (max-width: 767px) {
-  .Feed {
+  .Home {
     display: block;
   }
 }
