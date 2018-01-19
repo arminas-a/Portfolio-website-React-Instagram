@@ -80,13 +80,12 @@
   .home {
     display: block; }
   .home a img {
-    margin-bottom: 1rem; } }
+    margin-bottom: 2rem; } }
 
 .intro {
   text-align: left;
   padding: 0rem 2rem 2rem 0rem; }
   .intro h1 {
-    font-size: 4rem;
     letter-spacing: 10px; }
   @media all and (max-width: 767px) {
     .intro .intro h1 {
