@@ -12,9 +12,9 @@ const Footer = () => (
         <hr />
 
         <div className="Info-content">
-          <p>Company info</p>
-          <p>Company info</p>
-          <p>Company info</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sequi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sequi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sequi.</p>
         </div>
       </div>
       <div className="Social-media-container">
