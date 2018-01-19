@@ -80,6 +80,9 @@
     flex-direction: column;
     .Form-container {
       min-width: 100%;
+      input, textarea {
+        min-width: 90%;
+      }
     }
   }
 }

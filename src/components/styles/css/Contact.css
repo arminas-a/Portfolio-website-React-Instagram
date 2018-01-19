@@ -60,4 +60,6 @@
   .Contact section {
     flex-direction: column; }
     .Contact section .Form-container {
-      min-width: 100%; } }
+      min-width: 100%; }
+      .Contact section .Form-container input, .Contact section .Form-container textarea {
+        min-width: 90%; } }

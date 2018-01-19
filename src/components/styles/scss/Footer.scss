@@ -5,6 +5,7 @@
     padding-bottom: 2rem;
     margin-top: 3rem;
     background: $background-dark;
+    
     h6 {
         color: $font-color-light;
     }
@@ -12,7 +13,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        opacity: 0.7;
         .Info-container {
             .Info-content {
                     color: $font-color-light;

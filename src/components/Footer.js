@@ -17,7 +17,7 @@ const Footer = () => (
           <p>Company info</p>
         </div>
       </div>
-      <div className="Social-media">
+      <div className="Social-media-container">
         <h6>Social media</h6>
         <hr />
         <ul className="Social-media-list">

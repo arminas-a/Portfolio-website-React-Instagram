@@ -8,13 +8,13 @@ const Forms = ( ) => {
     <Form>
     { formApi => (
       <form onSubmit={formApi.submitForm} id="form1">
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Name *</label>
         <Text field="name" className="name" />
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Email *</label>
         <Text field="email" className="email" />
-        <label htmlFor="phone">Phone</label>
+        <label htmlFor="phone">Phone *</label>
         <Text field="phone" className="phone" />
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">Message *</label>
         <TextArea field="message" className="message" />
         <button type="submit" className="Form-button">Send</button>
       </form>
