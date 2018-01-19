@@ -50,11 +50,13 @@
       padding: 1rem;
       margin-bottom: 1rem;
     }
-    input, textarea, button {
-      outline: none;
-    }
+
     input, textarea, button {
       border: 1px solid rgba(33, 33, 33, .2);
+      outline: none;
+      -webkit-border-radius:0; 
+      border-radius:0;
+      -webkit-appearance: none;
     }
     button:hover {
       border: 1px solid rgba(33, 33, 33, .6);
