@@ -2,20 +2,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1rem; }
-
-.contact .contact-us {
-  border: 1px solid black; }
 
 .contact .form {
   border: 1px solid black; }
 
 .form-container {
   min-width: 50%;
-  background: #dbe9e8;
-  height: auto;
-  padding-top: 1rem; }
+  height: auto; }
   .form-container form {
     display: flex;
     flex-direction: column;
@@ -35,8 +30,8 @@
     height: auto;
     margin: 0 auto;
     background: transparent;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.15rem;
+    margin: 1rem;
     cursor: pointer; }
   .form-container input,
   .form-container textarea,
@@ -52,7 +47,7 @@
   .form-container textarea {
     background: transparent;
     color: #212121;
-    min-width: 60%;
+    min-width: 100%;
     margin-bottom: 1rem; }
   .form-container input:focus,
   .form-container textarea:focus {
@@ -62,10 +57,7 @@
     height: 5rem; }
 
 @media all and (max-width: 767px) {
-  .contact section {
+  .services section, .about section, .contact section {
     flex-direction: column; }
-    .contact section .form-container {
-      min-width: 100%; }
-      .contact section .form-container input,
-      .contact section .form-container textarea {
-        min-width: 90%; } }
+    .services section > *, .about section > *, .contact section > * {
+      min-width: 100%; } }

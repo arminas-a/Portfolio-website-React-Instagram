@@ -83,11 +83,11 @@
     margin-bottom: 1rem; } }
 
 .intro {
-  text-align: center;
-  margin: 4rem auto;
-  padding: 2rem;
-  letter-spacing: 10px;
-  font-size: 4rem; }
+  text-align: left;
+  padding: 0rem 2rem 2rem 0rem; }
+  .intro h1 {
+    font-size: 4rem;
+    letter-spacing: 10px; }
   @media all and (max-width: 767px) {
     .intro {
       font-size: 2rem;
@@ -99,7 +99,3 @@
 .example-appear.example-appear-active {
   opacity: 1;
   transition: opacity 0.5s ease-in; }
-
-.intro {
-  margin-left: 1rem;
-  margin-right: 1rem; }

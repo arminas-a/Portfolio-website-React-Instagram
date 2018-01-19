@@ -26,7 +26,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="social-media-container">
-        <h6>Social media</h6>
+        <h6>Me on Social Media</h6>
         <hr />
         <ul className="social-media-list">
           <li className="social-media-network">

@@ -16,7 +16,10 @@ class Home extends React.Component {
         transitionLeave={false}
         component="section"
       >
-        <h1 className="intro">Introduction</h1>
+      <div className="intro">
+        <h1>Hello, my name is Jane Doe. </h1>
+        <p>Feel free to browsne my recent works</p>
+        </div>
         <div id={Home} className="home">
           <Instafeed
             limit="10"

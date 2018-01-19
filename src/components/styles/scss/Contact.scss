@@ -5,12 +5,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1rem;
   }
-  .contact-us {
-    border: 1px solid black;
-  }
+
   .form {
     border: 1px solid black;
   }
@@ -20,9 +18,8 @@
 }
 .form-container {
   min-width: 50%;
-  background: #dbe9e8;
   height: auto;
-  padding-top: 1rem;
+
   form {
     display: flex;
     flex-direction: column;
@@ -46,8 +43,8 @@
     height: auto;
     margin: 0 auto;
     background: transparent;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.15rem;
+    margin: 1rem;
     cursor: pointer;
   }
   input,
@@ -66,7 +63,7 @@
   textarea {
     background: transparent;
     color: $font-color-dark;
-    min-width: 60%;
+    min-width: 100%;
     margin-bottom: 1rem;
   }
   input:focus,
@@ -78,15 +75,14 @@
     height: 5rem;
   }
 }
-.contact section {
+
   @media all and (max-width: 767px) {
-    flex-direction: column;
-    .form-container {
-      min-width: 100%;
-      input,
-      textarea {
-        min-width: 90%;
+    .services, .about, .contact {
+      section {
+        flex-direction: column;
+        > * {
+          min-width: 100%;
+        }
       }
     }
   }
-}

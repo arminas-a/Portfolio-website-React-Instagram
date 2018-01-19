@@ -13,8 +13,11 @@ const Services = () => (
       transitionLeave={false}
       component="section"
     >
+    <div className="services-intro">
       <h2>Services</h2>
-      <br />
+      <p>Let me describe how I could help you.</p>
+      </div>
+      <div className="services-content">
       <article>
         <h3>Design</h3>
         <p>
@@ -45,6 +48,7 @@ const Services = () => (
           ratione corporis soluta dolorum nulla?
         </p>
       </article>
+      </div>
     </CSSTransitionGroup>
   </div>
 );

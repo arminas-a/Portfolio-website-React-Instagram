@@ -17,7 +17,7 @@ const Contact = () => (
     >
       <div className="invitation">
         <h2>Contact us</h2>
-        <p>Every great partnership starts from 'Hello'</p>
+        <p>Every great partnership starts from 'Hello'.</p>
       </div>
       <div className="form-container">
         <Forms />
