@@ -4,27 +4,27 @@ import "./styles/css/Global.css";
 import "./styles/css/Header.css";
 
 const Header = () => (
-  <div className="Header">
-      <NavLink exact to="/" activeClassName="active">
-        <h6 className="Logo">Header</h6>
-      </NavLink>
-    <ul className="Nav">
-      <li className="Nav-item">
+  <div className="header">
+    <NavLink exact to="/" activeClassName="active">
+      <h6 className="logo">Header</h6>
+    </NavLink>
+    <ul className="nav">
+      <li className="nav-item">
         <NavLink exact to="/" activeClassName="active">
           Home
         </NavLink>
       </li>
-      <li className="Nav-item">
+      <li className="nav-item">
         <NavLink to="/Services" activeClassName="active">
           Services
         </NavLink>
       </li>
-      <li className="Nav-item">
+      <li className="nav-item">
         <NavLink to="/About" activeClassName="active">
           About
         </NavLink>
       </li>
-      <li className="Nav-item">
+      <li className="nav-item">
         <NavLink to="/Contact" activeClassName="active">
           Contact
         </NavLink>

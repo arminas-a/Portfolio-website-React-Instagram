@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./components/styles/css/Global.css";
-import './App.css';
-
+import "./App.css";
 
 //App components
 import Header from "./components/Header";
@@ -16,15 +15,13 @@ const App = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Header />
-      <Route exact path='/' component={Home} />
-      <Route path='/services' component={Services} />
-      <Route path='/about' component={About} />
-      <Route path='/contact' component={Contact} />
+      <Route exact path="/" component={Home} />
+      <Route path="/services" component={Services} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
       <Footer />
     </div>
   </BrowserRouter>
 );
-
-
 
 export default App;

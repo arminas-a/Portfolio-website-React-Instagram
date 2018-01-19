@@ -3,39 +3,47 @@ import "./styles/css/Global.css";
 import "./styles/css/Footer.css";
 
 const Footer = () => (
-  <div className="Footer">
-    <div className="Footer-content">
-      <div className="Info-container">
-        <div className="Footer-logo">
+  <div className="footer">
+    <div className="footer-content">
+      <div className="info-container">
+        <div className="footer-logo">
           <h6>Footer</h6>
         </div>
         <hr />
-
-        <div className="Info-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sequi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sequi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sequi.</p>
+        <div className="info-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+            sequi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+            sequi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+            sequi.
+          </p>
         </div>
       </div>
-      <div className="Social-media-container">
+      <div className="social-media-container">
         <h6>Social media</h6>
         <hr />
-        <ul className="Social-media-list">
-          <li className="Social-media-network">
+        <ul className="social-media-list">
+          <li className="social-media-network">
             <a href="">
-              <span class="icon-brand2"></span>
+              <span class="icon-brand2" />
               <p>Facebook</p>
             </a>
           </li>
-          <li className="Social-media-network">
-          <a href="">
-          <span class="icon-brand"></span>
+          <li className="social-media-network">
+            <a href="">
+              <span class="icon-brand" />
               <p>Instagram</p>
             </a>
           </li>
-          <li className="Social-media-network">
-          <a href="">
-          <span class="icon-brand3"></span>
+          <li className="social-media-network">
+            <a href="">
+              <span class="icon-brand3" />
               <p>Linkedin</p>
             </a>
           </li>

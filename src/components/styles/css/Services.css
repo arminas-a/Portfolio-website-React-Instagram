@@ -1,8 +1,8 @@
-.Services section {
+.services section {
   max-width: 50%; }
-  .Services section h2 {
+  .services section h2 {
     color: #212121; }
 
 @media all and (max-width: 767px) {
-  .Services section {
+  .services section {
     max-width: 100%; } }

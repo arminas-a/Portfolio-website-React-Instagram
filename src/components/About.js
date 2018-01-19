@@ -4,7 +4,7 @@ import "./styles/css/Global.css";
 import "./styles/css/About.css";
 
 const About = () => (
-  <div className="About">
+  <div className="about">
     <CSSTransitionGroup
       transitionName="example"
       transitionAppear={true}

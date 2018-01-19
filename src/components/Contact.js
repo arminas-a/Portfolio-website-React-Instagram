@@ -6,7 +6,7 @@ import "./styles/css/Contact.css";
 import Forms from "./Forms";
 
 const Contact = () => (
-  <div className="Contact">
+  <div className="contact">
     <CSSTransitionGroup
       transitionName="example"
       transitionAppear={true}
@@ -15,11 +15,11 @@ const Contact = () => (
       transitionLeave={false}
       component="section"
     >
-      <div className="Invitation">
+      <div className="invitation">
         <h2>Contact us</h2>
         <p>Every great partnership starts from 'Hello'</p>
       </div>
-      <div className="Form-container">
+      <div className="form-container">
         <Forms />
       </div>
     </CSSTransitionGroup>
