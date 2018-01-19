@@ -51,6 +51,9 @@
       margin-bottom: 1rem;
     }
     input, textarea, button {
+      outline: none;
+    }
+    input, textarea, button {
       border: 1px solid rgba(33, 33, 33, .2);
     }
     button:hover {
@@ -64,7 +67,6 @@
     }
     input:focus, textarea:focus {
       box-shadow: none;
-      outline: none;
       border: 1px solid rgba(33, 33, 33, .6);
     }
     textarea {
