@@ -34,14 +34,13 @@
           text-decoration: none;
           color: #fefefe; }
           .footer .footer-content .social-media-list .social-media-network a span {
-            line-height: 1;
             filter: grayscale(100%);
             padding-right: 0.5rem; }
           .footer .footer-content .social-media-list .social-media-network a p {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
             margin: 0;
             padding: 0;
-            line-height: 1.5;
+            line-height: 2;
             color: #fefefe;
             filter: brightness(50%); }
         .footer .footer-content .social-media-list .social-media-network a:hover span {
