@@ -12,8 +12,9 @@
     letter-spacing: 1px;
   }
 
-  span {
+  span, input, textarea, label, button {
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
   }
   
   h1, h2 {
@@ -24,13 +25,12 @@
     letter-spacing: 10px;
     margin-bottom: 1rem;
   }
-  
-  @media all and (max-width: 767px) {
-    h1, h2 {
-      font-size: 72px;
-    }
+
+  h6 {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0;
   }
-  
   
   
   p {
@@ -64,6 +64,9 @@
     .Header, .Home, .Services, .About, .Contact, .Footer-content {
       margin-left: 1rem;
       margin-right: 1rem;
+    }
+    h1, h2 {
+      font-size: 36px;
     }
   }
 

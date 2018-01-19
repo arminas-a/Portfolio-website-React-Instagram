@@ -5,17 +5,16 @@
     padding-bottom: 2rem;
     margin-top: 3rem;
     background: $background-dark;
-    h3 {
-        color: #fefefe;
-        padding-bottom: 1rem;
+    h6 {
+        color: $font-color-light;
     }
     .Footer-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        .Footer-info-container {
-            .Footer-info {
+        .Info-container {
+            .Info-content {
                     color: $font-color-light;
                     p {
                         padding-bottom: 0rem;

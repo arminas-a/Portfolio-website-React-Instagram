@@ -5,20 +5,20 @@ import "./styles/css/Footer.css";
 const Footer = () => (
   <div className="Footer">
     <div className="Footer-content">
-      <div className="Footer-info-container">
+      <div className="Info-container">
         <div className="Footer-logo">
-          <h3>Footer</h3>
+          <h6>Footer</h6>
         </div>
         <hr />
 
-        <div className="Footer-info">
+        <div className="Info-content">
           <p>Company info</p>
           <p>Company info</p>
           <p>Company info</p>
         </div>
       </div>
       <div className="Social-media">
-        <h3>Social media</h3>
+        <h6>Social media</h6>
         <hr />
         <ul className="Social-media-list">
           <li className="Social-media-network">

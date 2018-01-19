@@ -120,6 +120,9 @@
   .Home {
     display: block;
   }
+  .Home a img {
+    margin-bottom: 1rem;
+  }
 }
 
 .Intro {
@@ -131,7 +134,6 @@
 
   @media all and (max-width: 767px) {
     font-size: 2rem;
-    text-align: left;
     padding: 0rem;
   }
 }
@@ -147,3 +149,7 @@
   transition: opacity .5s ease-in;
 }
 
+.Intro {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

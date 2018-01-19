@@ -1,8 +1,81 @@
-@import 'Global';
+@import "Global";
 
 .Contact {
-    max-width: 50%;
-    h2 {
-        $font-color-dark: #212121;
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .Contact-us {
+    border: 1px solid black;
+  }
+  .Form {
+    border: 1px solid black;
+  }
+  h2 {
+    $font-color-dark: #212121;
+  }
+}
+
+.Form-container {
+    min-width: 50%;
+    background: #DBE9E8;
+    height: auto;
+    padding-top: 1rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
+    label {
+        padding: 1rem;
+    }
+    input {
+        padding: 1rem;
+        margin: 1rem;
+        box-sizing: border-box;
+        margin:0 auto;
+    }
+    input::placeholder {
+      font-size: 1rem;
+    }
+    .Form-button {
+      min-width: 5rem;
+      height: auto;
+      margin:0 auto;
+      background: transparent;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    input, textarea, button {
+      border: 1px solid rgba(33, 33, 33, .2);
+    }
+    button:hover {
+      border: 1px solid rgba(33, 33, 33, .6);
+    }
+    input, textarea {
+      background: transparent;
+      color: $font-color-dark;
+      min-width: 60%;
+      margin-bottom: 1rem;
+    }
+    input:focus, textarea:focus {
+      box-shadow: none;
+      outline: none;
+      border: 1px solid rgba(33, 33, 33, .6);
+    }
+    textarea {
+      height: 5rem;
+    }
+}
+.Contact section {
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+    .Form-container {
+      min-width: 100%;
+    }
+  }
 }

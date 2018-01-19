@@ -76,7 +76,9 @@
 
 @media all and (max-width: 767px) {
   .Home {
-    display: block; } }
+    display: block; }
+  .Home a img {
+    margin-bottom: 1rem; } }
 
 .Intro {
   text-align: center;
@@ -87,7 +89,6 @@
   @media all and (max-width: 767px) {
     .Intro {
       font-size: 2rem;
-      text-align: left;
       padding: 0rem; } }
 
 .example-appear {
@@ -96,3 +97,7 @@
 .example-appear.example-appear-active {
   opacity: 1;
   transition: opacity .5s ease-in; }
+
+.Intro {
+  margin-left: 1rem;
+  margin-right: 1rem; }
