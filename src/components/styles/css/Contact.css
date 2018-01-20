@@ -56,7 +56,7 @@
   .form-container textarea {
     height: 10rem; }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 1023px) {
   .services section, .about section, .contact section {
     flex-direction: column; }
     .services section > *, .about section > *, .contact section > * {

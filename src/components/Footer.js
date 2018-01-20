@@ -48,6 +48,7 @@ const Footer = () => (
             </a>
           </li>
         </ul>
+        <p>2018 Portfolio projects.</p>
       </div>
     </div>
   </div>

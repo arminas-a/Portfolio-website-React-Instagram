@@ -76,13 +76,14 @@
   }
 }
 
-  @media all and (max-width: 767px) {
-    .services, .about, .contact {
-      section {
-        flex-direction: column;
-        > * {
-          min-width: 100%;
-        }
+@media all and (max-width: 1023px) {
+  .services, .about, .contact {
+    section {
+      flex-direction: column;
+      > * {
+        min-width: 100%;
       }
     }
   }
+}
+
