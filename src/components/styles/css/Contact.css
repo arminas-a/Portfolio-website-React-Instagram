@@ -54,7 +54,7 @@
     box-shadow: none;
     border: 1px solid rgba(33, 33, 33, 0.6); }
   .form-container textarea {
-    height: 5rem; }
+    height: 10rem; }
 
 @media all and (max-width: 767px) {
   .services section, .about section, .contact section {
