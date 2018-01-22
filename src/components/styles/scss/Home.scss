@@ -17,6 +17,10 @@
     transition: 0.5s ease;
     backface-visibility: hidden;
     object-fit: cover;
+    filter: contrast(80%);
+    margin: -1rem;
+    padding: 1rem;
+
   }
   .image-fade {
     transition: 0.5s ease;
@@ -28,7 +32,8 @@
     text-align: center;
   }
   .image-container:hover .image {
-    opacity: 0.3;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    filter: contrast(100%);
   }
   .image-container:hover .image-fade {
     opacity: 1;
@@ -38,6 +43,7 @@
     color: $font-color-light;
     font-size: 1rem;
     padding: 1rem 2rem;
+    display: none;
   }
 }
 @media all and (min-width: 1024px) {
