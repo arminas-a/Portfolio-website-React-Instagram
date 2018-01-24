@@ -5,6 +5,8 @@
 .home {
   .image-container {
     position: relative;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
   div:first-of-type {
     display: none;
@@ -18,7 +20,6 @@
     backface-visibility: hidden;
     object-fit: cover;
     filter: contrast(80%);
-    margin: -1rem;
     padding: 1rem;
 
   }
